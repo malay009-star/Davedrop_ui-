@@ -113,7 +113,7 @@ section {
     width: 84%;
     margin: auto;
     padding: 4rem 0rem;
-    background-image: url("/Assets/img/1.png");
+    background-image: url("Assets/img/1.png");
     background-position-x: 17rem;
     background-position-y: 100px;
     background-size: 70rem;
@@ -442,7 +442,7 @@ footer {
     padding: 1.5rem;
     border-radius: 1rem;
     background-color: #16171d;
-    background-image: url("/Assets/img/5.png");
+    background-image: url("Assets/img/5.png");
     background-repeat: no-repeat;
     background-position-y: -0.3rem;
     background-position-x: 106%;
@@ -503,7 +503,7 @@ footer {
 #Professional {
     margin-left: 1.8rem;
     background-color: #16171d;
-    background-image: url("/Assets/img/6.png");
+    background-image: url("Assets/img/6.png");
 }
 
 #prof-btn {
