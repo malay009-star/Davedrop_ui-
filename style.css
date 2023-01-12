@@ -1,0 +1,1018 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Fredoka+One&family=Montserrat:wght@500&family=Patua+One&family=Poppins:wght@200;400;500;700&family=Questrial&family=Righteous&family=Roboto&display=swap");
+*,
+::after,
+::before {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+li {
+    /* list-style: none; */
+    margin-left: 3.9rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    /* z-index: 1; */
+    position: relative;
+    background-color: #101012;
+    color: white;
+}
+
+
+/* main::before {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    content: "";
+    background-color: radial-gradient( to right, rgba(#a290ff, #586eff, #4b89b9 1) 30%, rgba(#a290ff, #586eff, #4b89b9, 0.9) 50%, rgba(#a290ff, #586eff, #4b89b9 0.5) 80%);
+} */
+
+nav {
+    width: 90%;
+    margin: auto;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    flex: 1;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* background-color: rgb(44, 78, 67); */
+}
+
+ul {
+    display: flex;
+    flex: 5;
+    align-items: center;
+    list-style: none;
+    /* background-color: rgb(56, 56, 10); */
+}
+
+ul li a {
+    position: relative;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    /* color: red; */
+}
+
+ul li a:hover {
+    color: white;
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0.1rem;
+    left: 0%;
+    bottom: 0%;
+    transition: width 0.8s ease;
+    background-color: white;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+nav .menu-btn i {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.signup a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#click {
+    display: none;
+}
+
+section {
+    width: 84%;
+    margin: auto;
+    padding: 4rem 0rem;
+    background-image: url("/Assets/img/1.png");
+    background-position-x: 17rem;
+    background-position-y: 100px;
+    background-size: 70rem;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    width: 70%;
+    line-height: 5.2rem;
+    font-size: 4.7rem;
+    word-spacing: -0.4rem;
+    font-weight: 500;
+}
+
+.hero p {
+    padding-top: 2.9rem;
+    width: 40%;
+    line-height: 1.9rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    /* background-color: red; */
+}
+
+.hero a {
+    margin-top: 2.5rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    color: rgb(19, 19, 19);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero a:hover {
+    background-color: white;
+}
+
+.hero .scnd-btn {
+    margin-left: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero .scnd-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll {
+    padding: 2rem 0rem;
+}
+
+.scroll img {
+    cursor: pointer;
+    display: inline-block;
+    width: 3rem;
+    transition: all 0.4s ease;
+    border-radius: 50rem;
+    color: white;
+}
+
+.scroll img:hover {
+    padding-bottom: 1rem;
+}
+
+.scroll span {
+    display: inline-block;
+    padding-top: 9.2rem;
+    padding-top: -50rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* footer is start */
+
+footer {
+    background-color: #0e0e0e;
+    color: white;
+    padding-top: 5rem;
+}
+
+.dave {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dave-title {
+    width: 50%;
+    line-height: 3.6rem;
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cards {
+    width: 86%;
+    margin: auto;
+    padding: 2.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+}
+
+.card img {
+    transition: all 3s ease;
+}
+
+.card img:hover {
+    transform: rotate(360deg);
+}
+
+.card h3 {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    padding-left: 0.7rem;
+    font-weight: 500;
+}
+
+.card p {
+    padding-left: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* sub-footer is start */
+
+#sub-footer {
+    position: relative;
+    padding-top: 5rem;
+    background-color: #0e0e0e;
+    color: white;
+    /* background-color: red; */
+}
+
+.companies-work {
+    width: 90%;
+    margin: auto;
+    border-radius: 1.3rem;
+    background-color: #7376ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 24rem;
+}
+
+.work-info {
+    width: 61%;
+    text-align: center;
+}
+
+.work-info h3 {
+    width: 94%;
+    font-size: 2.1rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+}
+
+.work-info p {
+    width: 75%;
+    margin: auto;
+    font-size: 1.05rem;
+    line-height: 1.9rem;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.download-part {
+    position: absolute;
+    top: 44%;
+    right: 12.5%;
+    width: 75%;
+    margin: auto;
+    background-color: #3b3b54;
+    padding: 2.4rem;
+    border-radius: 1.5rem;
+}
+
+.download-icon {
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 6rem 0rem;
+}
+
+.download-icon i {
+    cursor: pointer;
+    display: block;
+    width: 8%;
+    margin: auto;
+    color: white;
+    padding: 1rem 0rem;
+    border-radius: 50rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 2.5rem;
+}
+
+.download-icon i:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.download-icon a {
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.download-icon a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.compony-links {
+    width: 78%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    padding-top: 6rem;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.compony-links li {
+    list-style: none;
+    margin-left: 6rem;
+}
+
+.compony-links a {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.compony-links a:hover {
+    color: #a493ff;
+}
+
+.accounts {
+    background-color: #0e0e0e;
+    color: white;
+}
+
+.personal-account {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+    /* padding-bottom: 4rem; */
+    /* background-color: yellow; */
+}
+
+.account-info {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.account-info h3 {
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+}
+
+.sales {
+    padding: 1.2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sales i {
+    cursor: pointer;
+    font-size: 2.7rem;
+    padding: 0rem 1rem;
+    overflow: hidden;
+    color: #586eff;
+}
+
+.sales i:hover {
+    color: white;
+}
+
+.sales span {
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 10rem;
+    background-color: #363538;
+}
+
+.sales span:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.packages {
+    padding: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.Regular {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #16171d;
+    background-image: url("/Assets/img/5.png");
+    background-repeat: no-repeat;
+    background-position-y: -0.3rem;
+    background-position-x: 106%;
+}
+
+.Regular a {
+    /* display: inline-block; */
+    padding: 0.53rem 1rem;
+    border-radius: 10rem;
+    background-color: #194051;
+}
+
+#regu-btn:hover {
+    background-color: #1f4a5c;
+}
+
+.Regular h3 {
+    font-weight: 500;
+    font-size: 3rem;
+    padding: 2rem 0rem;
+}
+
+.Regular span {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.Regular p {
+    padding-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+.features {
+    padding: 2.5rem 0rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.features li {
+    margin-left: 0rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 0rem;
+}
+
+#upload-plan {
+    background-color: #2d2e35;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0rem;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+}
+
+#upload-plan:hover {
+    background-color: #2d2e45;
+}
+
+#Professional {
+    margin-left: 1.8rem;
+    background-color: #16171d;
+    background-image: url("/Assets/img/6.png");
+}
+
+#prof-btn {
+    background-color: #7376ff;
+}
+
+#prof-btn:hover {
+    background-color: #8587ff;
+}
+
+#upgrade-plan {
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-weight: 501;
+    display: block;
+    color: rgb(17, 17, 17);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#upgrade-plan:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* work building start */
+
+.work-building {
+    background-color: #181818;
+}
+
+.contact-part {
+    width: 90%;
+    margin: auto;
+    padding: 6rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.balb-1 {
+    width: 23%;
+    margin: auto;
+}
+
+.contact-info {
+    width: 50%;
+    /* margin: auto; */
+}
+
+.contact-info h3 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    height: 28%;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #2d2e35;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-info a:hover {
+    background-color: white;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.bulb-2 {
+    /* background-color: red; */
+    width: 23%;
+    margin-left: 5rem;
+}
+
+.bulb-2 img {
+    margin-left: 3rem;
+}
+
+.copywrite {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    font-weight: 500;
+}
+
+.social-links i {
+    cursor: pointer;
+    padding: 0rem 2rem;
+}
+
+.social-links i:hover {
+    color: #586eff;
+}
+
+
+/* responsiveness are starting */
+
+@media screen and (max-width: 940px) {
+    li {
+        margin-left: 1.9rem;
+    }
+    ul li a {
+        /* background-color: red; */
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .hero h1 {
+        width: 80%;
+        /* background-color: red; */
+        line-height: 3.5rem;
+        font-size: 3.4rem;
+    }
+    .hero p {
+        width: 75%;
+    }
+    .dave-title {
+        width: 85%;
+    }
+    .work-info {
+        width: 100%;
+    }
+    .download-icon i {
+        width: 15%;
+    }
+    .account-info {
+        width: 100%;
+    }
+    .packages {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #Professional {
+        margin-top: 2rem;
+        margin-left: 0rem;
+    }
+    .balb-1 {
+        width: 15%;
+    }
+    .contact-info {
+        width: 100%;
+    }
+    .bulb-2 {
+        width: 15%;
+    }
+    .bulb-2 img {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    .signup a {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+    nav ul {
+        position: fixed;
+        top: 15%;
+        left: 0;
+        height: 0vh;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        transition: all 1s ease;
+        background-color: #101012;
+    }
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0rem;
+        margin-left: 0rem;
+    }
+    #click:checked~ul {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        height: 50vh;
+    }
+    section {
+        width: 90%;
+        margin: auto;
+        background-position-x: 12.5rem;
+        background-position-y: 9rem;
+        background-size: 38rem;
+    }
+    .hero h1 {
+        width: 80%;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        /* background-color: red; */
+    }
+    .hero p {
+        width: 51%;
+        font-size: 0.8rem;
+    }
+    .hero a {
+        padding: 0.9rem 1.6rem;
+    }
+    .hero .scnd-btn {
+        margin-left: 1rem;
+    }
+    .scroll span {
+        padding-top: 7rem;
+        padding-bottom: 0rem;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    .dave-title {
+        width: 75%;
+        font-size: 1.9rem;
+        text-align: center;
+        font-weight: 500;
+        line-height: 2.9rem;
+    }
+    .cards {
+        width: 90%;
+    }
+    .card {
+        width: 49%;
+        /* background-color: red; */
+    }
+    .card img {
+        width: 4.8rem;
+    }
+    .card h3 {
+        padding: 0.3rem 0rem;
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        font-weight: 400;
+    }
+    .card p {
+        font-size: 0.9rem;
+        padding-left: 0.9rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #third-card {
+        margin-top: 3rem;
+    }
+    /* sub footer********************8 */
+    .companies-work {
+        padding-top: 2rem;
+        padding-bottom: 15rem;
+    }
+    .work-info {
+        width: 100%;
+        margin: auto;
+    }
+    .work-info h3 {
+        width: 100%;
+        margin: auto;
+        font-size: 1.9rem;
+    }
+    .work-info p {
+        width: 80%;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .download-part {
+        width: 83%;
+        top: 50%;
+        right: 8%;
+        padding: 1rem;
+    }
+    .download-icon {
+        padding: 3rem;
+    }
+    .download-icon i {
+        cursor: pointer;
+        display: block;
+        width: 15%;
+        margin: auto;
+    }
+    .personal-account {
+        width: 90%;
+        margin: auto;
+    }
+    .balb-1 {
+        width: 15%;
+    }
+    .balb-1 img {
+        width: 100%;
+        /* margin: auto; */
+    }
+    .contact-info {
+        width: 90%;
+        /* background-color: yellow; */
+    }
+    .contact-info h3 {
+        font-size: 2rem;
+    }
+    input {
+        width: 50%;
+        height: 22%;
+        margin-left: 4rem;
+    }
+    .contact-info a {
+        padding: 0.5rem 0.5rem;
+    }
+    .bulb-2 {
+        /* background-color: red; */
+        width: 15%;
+        margin-left: 0rem;
+    }
+    .bulb-2 img {
+        margin-left: 0rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .logo {
+        font-size: 1.3rem;
+        flex: 1;
+    }
+    section {
+        width: 90%;
+        margin: auto;
+        padding: 2rem 0rem;
+        background-position-x: 50%;
+        background-position-y: 80%;
+        background-size: 38rem;
+    }
+    .hero h1 {
+        width: 100%;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        word-spacing: 0rem;
+        /* background-color: red; */
+    }
+    .hero p {
+        width: 100%;
+    }
+    .hero a {
+        text-align: center;
+        width: 100%;
+        padding: 0.7rem 0rem;
+        border-radius: 5rem;
+    }
+    .first-btn {
+        margin-bottom: -1rem;
+    }
+    .hero .scnd-btn {
+        margin-left: 0rem;
+    }
+    .scroll span {
+        padding-top: 27rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.3);
+    }
+    footer {
+        padding-top: 3.5rem;
+    }
+    .dave-title {
+        width: 90%;
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 500;
+        line-height: 2.2rem;
+    }
+    .cards {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+    }
+    .card p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    #second-card {
+        margin-top: 2rem;
+    }
+    .companies-work {
+        padding-top: 1rem;
+        padding-bottom: 8rem;
+    }
+    .work-info h3 {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding: 0rem 0.1rem;
+    }
+    .work-info p {
+        width: 85%;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+    .download-part {
+        width: 83%;
+        top: 75%;
+        right: 8%;
+        padding: 0.8rem;
+    }
+    .download-icon {
+        padding: 2rem;
+    }
+    .download-icon i {
+        font-size: 1.8rem;
+        width: 21%;
+    }
+    .download-icon a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 2rem;
+    }
+    .compony-links {
+        display: none;
+    }
+    .personal-account {
+        padding-top: 10rem;
+    }
+    .account-info {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .account-info h3 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .sales i {
+        cursor: pointer;
+        font-size: 2.1rem;
+    }
+    .sales span {
+        padding: 0.3rem 0.6rem;
+    }
+    .packages {
+        width: 90%;
+    }
+    .balb-1 {
+        width: 15%;
+        /* background-color: red; */
+    }
+    .balb-1 img {
+        width: 100%;
+        /* margin: auto; */
+    }
+    .contact-info {
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    .contact-info h3 {
+        /* font-size: 1.6rem; */
+        font-size: 170%;
+        line-height: 2rem;
+    }
+    input {
+        width: 58%;
+        height: 27%;
+        /* margin-top: 1rem; */
+        margin-left: 6%;
+    }
+    .contact-info a {
+        padding: 1.8% 1.8%;
+        margin-left: 0.5rem;
+    }
+    .bulb-2 {
+        /* background-color: red; */
+        width: 15%;
+        margin-left: 0rem;
+    }
+    .bulb-2 img {
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .copywrite p {
+        font-size: 0.8rem;
+    }
+    .social-links i {
+        font-size: 0.8rem;
+        padding: 0rem 0.3rem;
+    }
+}
