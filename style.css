@@ -619,6 +619,11 @@ input {
     padding: 0rem 2rem;
 }
 
+.fa-twitter {
+    padding-left: 0rem;
+    /* background-color: red; */
+}
+
 .social-links i:hover {
     color: #586eff;
 }
@@ -680,7 +685,7 @@ input {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     nav .menu-btn i {
         display: block;
     }
@@ -1014,5 +1019,11 @@ input {
     .social-links i {
         font-size: 0.8rem;
         padding: 0rem 0.3rem;
+    }
+    #subs {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
     }
 }
